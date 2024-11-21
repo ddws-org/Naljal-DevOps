@@ -254,7 +254,7 @@ cluster-configs:
                 bpa-calculator: "http://bpa-calculator.uat:8080/"
                 rainmaker-pgr: "http://rainmaker-pgr:8080/"
                 ws-calculator: "http://ws-calculator.uat:8080/uat/"
-                ws-services: "http://ws-services.uat:8080/uat/"
+                ws-service: "http://ws-service.uat:8080/uat/"
                 sw-services: "http://sw-services.uat:8080/"
                 sw-calculator: "http://sw-calculator.uat:8080/"
                 land-services: "http://land-services.uat:8080/"
@@ -431,7 +431,7 @@ chatbot:
   user-service-chatbot-citizen-passwrord: "123456"
 
 billing-service:
-  replicas: 1
+  replicas: 3
   memory_limits: 512Mi
   demand.updateurl: '{"WS":"http://ws-calculator.uat:8080/uat/ws-calculator/waterCalculator/_updateDemand"}'
   sms-bill-notification-enable: false
